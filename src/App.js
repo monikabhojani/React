@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Person from './person';
+import InputLogger from './InputLogger';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       </header>
       <Person name="Monika" age="28" weight="70" height="5&apos;1&quot;"/>
       <Person name="Munir" age="18" weight="90" height="6&apos;0&quot;"/>
+      <hr/>
+      <InputLogger/>
     </div>
   );
 }
