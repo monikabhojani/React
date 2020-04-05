@@ -1,12 +1,20 @@
 import React from 'react';
 
 class InputLogger extends React.Component{
+
+  state = { inputval : 'Enter Here'}
+
   changeHandler = (evt) =>{
-    console.log(evt.target.value);
+    this.setState({inputval : evt.target.value});
   }
   
   render(){
-    return <input type='text' onChange={this.changeHandler}/>;
+    return(
+    <div>
+      <input type='text' onChange={this.changeHandler}/>
+      <p>{this.state.inputval}</p>
+    </div> 
+    );
   }
 }
 
