@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Person from './person';
 import InputLogger from './InputLogger';
+import Increment from './Increment';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Person name="Munir" age="18" weight="90" height="6&apos;0&quot;"/>
       <hr/>
       <InputLogger/>
+      <hr/>
+      <Increment initVal={3}/>
     </div>
   );
 }
